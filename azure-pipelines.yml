@@ -33,3 +33,8 @@ steps:
 - script: |
     echo $(Password)
   displayName: 'Run a multi-line script'
+
+- script: |
+    SET var="$(ConnectionString)--$(SERVICENAME)--$(Password)"
+    ECHO %var%
+  displayName: 'Run a multi-line script'

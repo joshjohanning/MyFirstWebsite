@@ -29,9 +29,10 @@ steps:
     azureSubscription: 'Visual Studio Enterprise – MPN(93ddb8b3-ddb9-4d1c-ba59-421456e65538)'
     KeyVaultName: 'josh-keyvault'
     SecretsFilter: '*'
+  name: KV
 
 - script: |
-    echo $(Password)
+    echo $(KV.Password)
   displayName: 'Run a multi-line script'
 
 - script: |

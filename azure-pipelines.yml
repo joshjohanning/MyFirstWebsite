@@ -20,5 +20,5 @@ steps:
   displayName: 'Run a multi-line script'
 
 - script: |
-    $(InterpolatedConnectionString)
+    echo $(InterpolatedConnectionString)
   displayName: 'Run a multi-line script'

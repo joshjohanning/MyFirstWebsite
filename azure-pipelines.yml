@@ -17,6 +17,8 @@ steps:
 - script: |
     echo ##vso[task.setvariable variable=InterpolatedConnectionString]$(ConnectionString)--$(SERVICENAME)
     echo $(InterpolatedConnectionString)
+    variable = test
+    echo variable
     echo $ENV:InterpolatedConnectionString
     echo $(ENV:InterpolatedConnectionString)
   displayName: 'Run a multi-line script'

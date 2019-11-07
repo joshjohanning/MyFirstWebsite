@@ -15,7 +15,7 @@ variables:      # pipeline-level
 
 steps:
 - script: |
-    ##vso[task.setvariable variable=InterpolatedConnectionString]$(ConnectionString)--$(SERVICENAME)
+    echo ##vso[task.setvariable variable=InterpolatedConnectionString]$(ConnectionString)--$(SERVICENAME)
     echo $(InterpolatedConnectionString)
   displayName: 'Run a multi-line script'
 
